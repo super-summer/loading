@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>loading </title>
+	<link rel="stylesheet" href="">
+	<style>
+		body{background: green;}
+		.loading{position: absolute;left: 50%;top:50%;width: 163px;height: 164px;margin:-82px 0 0 -82px}
+		.loading .cat{background: url(img/cat.png);width: 83px;height: 79px;position: relative;margin:42px 0 0 40px;}
+		.eyel,.eyer{position: absolute;width: 30px;height: 30px;background: white;border-radius: 15px;} 
+		span.eyel{left:9px;top:15px;} 
+		span.eyer{right: 9px;top:15px;} 
+		span.nose{position: absolute;background: url(img/nose.png);width: 25px;height: 29px;top:50%;left: 50%;margin-left: -12px;}
+		.eyeball{width: 8px;height: 8px;border-radius: 4px;background:#848192;position: absolute;left: 3px;top:7px;
+			transform:rotate(0deg);
+			transform-origin:12px 8px;	
+			animation: see1 2s infinite linear;
+		}
+		.eyelid{
+			width: 30px;height: 0;background: #c8c6c9;position: absolute;left: 0;top:0;
+			animation:see2 2s infinite linear;
+		}
+		@keyframes see1 {
+			0% {transform:rotate(0deg)};
+			50% {transform:rotate(-180deg);}
+			100% {transform:rotate(-360deg);}
+		}
+		@keyframes see2{
+			0% {height: 0;}
+			40% {height: 15px;}
+			80% {height: 0}
+			100% {height: 0;}
+		}
+		.mouse{
+			width: 163px;height: 164px;background: url(img/mouse.png);
+			transform:rotate(0deg);
+			animation:rat 2s infinite linear; 
+			position: absolute;left: 0;top:0;
+		} 
+		@keyframes rat{
+			0% {transform:rotate(0deg);}
+			50% {transform:rotate(-180deg);}
+			100% {transform:rotate(-360deg);}
+		}
+	</style>
+</head>
+<body>
+	<div class="loading">
+		<p class="cat">
+			<span class="eyel"><i class="eyeball"></i><i class="eyelid"></i></span>	
+			<span class="eyer"><i class="eyeball"></i><i class="eyelid"></i></span>
+			<span class="nose"></span>
+		</p>
+		<span class="mouse"></span>
+	</div>
+</body>
+</html>
