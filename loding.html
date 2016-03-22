@@ -2,11 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>loading </title>
 	<link rel="stylesheet" href="">
 	<style>
-		body{background: green;}
+		body{background: #5e4674;color: white;}
 		.loading{position: absolute;left: 50%;top:50%;width: 163px;height: 164px;margin:-82px 0 0 -82px}
 		.loading .cat{background: url(img/cat.png);width: 83px;height: 79px;position: relative;margin:42px 0 0 40px;}
 		.eyel,.eyer{position: absolute;width: 30px;height: 30px;background: white;border-radius: 15px;} 
@@ -44,6 +45,83 @@
 			50% {transform:rotate(-180deg);}
 			100% {transform:rotate(-360deg);}
 		}
+		.text{
+			position: absolute;
+			top: 200px;
+			left:10px;
+			font-family: "";
+		}
+		.text i{
+			font-style: normal;
+			opacity: 0;
+			animation:toggleshow 5s infinite linear;
+		}
+		.text i:nth-child(2){
+			animation:toggleshow2 5s infinite linear;
+		}
+		.text i:nth-child(3){
+			animation:toggleshow3 5s infinite linear;
+		}
+		.text i:nth-child(4){
+			animation:toggleshow4 5s infinite linear;
+		}
+		.text i:nth-child(5){
+			animation:toggleshow5 5s infinite linear;
+		}
+		.text i:nth-child(6){
+			animation:toggleshow6 5s infinite linear;
+		}
+		.text i:nth-child(7){
+			animation:toggleshow7 5s infinite linear;
+		}
+		@keyframes toggleshow{
+			0% {opacity:0 }
+			10% {opacity: 1}
+			70% {opacity: 1}
+			100% {opacity:0 }
+		}
+		@keyframes toggleshow2{
+			0% {opacity:0 }
+			10% {opacity: 0}
+			20% {opacity: 1}
+			70% {opacity: 1}
+			100% {opacity:0 }
+		}
+		@keyframes toggleshow3{
+			0% {opacity:0 }
+			20% {opacity: 0}
+			30% {opacity: 1}
+			70% {opacity: 1}
+			100% {opacity:0 }
+		}
+		@keyframes toggleshow4{
+			0% {opacity:0 }
+			30% {opacity: 0}
+			40% {opacity: 1}
+			70% {opacity: 1}
+			100% {opacity:0 }
+		}
+		@keyframes toggleshow5{
+			0% {opacity:0 }
+			40% {opacity: 0}
+			50% {opacity: 1}
+			70% {opacity: 1}
+			100% {opacity:0 }
+		}
+		@keyframes toggleshow6{
+			0% {opacity:0 }
+			50% {opacity: 0}
+			60% {opacity: 1}			
+			70% {opacity: 1}
+			100% {opacity:0 }
+		}
+		@keyframes toggleshow7{
+			0% {opacity:0 }
+			60% {opacity: 0}	
+			70% {opacity: 1}
+			100% {opacity:0 }
+		}
+
 	</style>
 </head>
 <body>
@@ -55,7 +133,15 @@
 			<span class="nose"></span>
 		</p>
 		<span class="mouse"></span>
+		<p class="text">
+			<i>l</i>
+			<i>o</i>
+			<i>a</i>
+			<i>d</i>
+			<i>i</i>
+			<i>n</i>
+			<i>g</i>
+		</p>
 	</div>
-	<h3>add remote</h3>
 </body>
 </html>
